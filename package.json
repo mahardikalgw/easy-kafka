@@ -1,0 +1,4 @@
+{
+  "name": "apache-kafka",
+  "packageManager": "yarn@4.4.1"
+}
