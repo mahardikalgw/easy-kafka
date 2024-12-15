@@ -1,4 +1,19 @@
 {
   "name": "apache-kafka",
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.4.1",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/kafkajs": "^1.9.0",
+    "express": "^4.21.2",
+    "kafkajs": "^2.2.4",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "consumer": "tsc ./src/consumer.ts && node ./src/consumer.js",
+    "producer": "tsc ./src/app.ts && node ./src/app.js"
+  }
 }
